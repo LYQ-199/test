@@ -33,14 +33,15 @@ public class DeptController {
         return Result.success();
     }
 
-
+//添加
     @PostMapping("/depts")
     public Result add(@RequestBody Dept dept){
 
         deptService.adddept(dept);
         return Result.success();
     }
-    //删除
+    //修改
+
 
     @PutMapping("/depts/")
     public Result update(){

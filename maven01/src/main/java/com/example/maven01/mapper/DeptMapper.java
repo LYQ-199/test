@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
-
+//测试
 @Mapper
 public interface DeptMapper {
     @Select("select *from tlias.dept")
@@ -16,7 +16,7 @@ public interface DeptMapper {
     @Delete("delete from tlias.dept where id=#{id}")
     void deleteById(Integer id);
 
-    @Insert("insert into dept(name,create_time,update_time) value(#{name},#{createTime},#{updateTime})")
+    //@Insert("insert into dept(name,create_time,update_time) value(#{name},#{createTime},#{updateTime})")
     void adddept(Dept dept);
 }
 
